@@ -1,0 +1,17 @@
+gspread>=5.9.0
+gspread_dataframe>=3.3.0
+numpy>=1.24.3
+pandas>=2.0.2
+Pillow>=9.5.0
+plotly>=5.10.0
+pygwalker>=0.3.4
+python_dateutil>=2.8.2
+streamlit>=1.23.1
+streamlit_authenticator>=0.2.2
+streamlit_extras>=0.2.7
+segno>=1.5.2
+rembg>=2.0.5
+streamlit-option-menu>=0.3.6
+opencv-python-headless<4.3
+polars>=0.18.5
+streamlit-aggrid>=0.3.4
