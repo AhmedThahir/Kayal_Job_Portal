@@ -64,6 +64,8 @@ def init(file_name, extra=None, divider=True):
 
 	common_styles = """
 		<style>
+		section[data-testid="stSidebar"]
+		{max-width: 40vw !important;}
 		[data-testid="stToolbar"],
 		#MainMenu,
 		footer
