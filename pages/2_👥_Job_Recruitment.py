@@ -115,6 +115,6 @@ def main():
 	]
 	
 	df = df.to_html(escape=False, justify="left", index=False)
-	df += """<style>.stMarkdown:has(table.dataframe) {max-height: 50vh !important; max-width: 80vw !important; overflow: scroll !important; }</style>"""
+	df += """<style>.stMarkdown:has(table.dataframe) {max-height: 50vh !important; max-width: 100% !important; overflow: scroll !important; }</style>"""
 	st.write(df, unsafe_allow_html=True)
 main()
