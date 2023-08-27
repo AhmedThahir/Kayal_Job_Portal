@@ -54,6 +54,7 @@ def main():
 		divider=False
 	)
 
+	# st.markdown("Following is the list of job seekers")
 	st.info("Use the filters on the sidebar to refine your results.", icon="👈")
 
 	df = get_data()

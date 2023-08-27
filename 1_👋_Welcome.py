@@ -13,7 +13,7 @@ def main():
 	)
 
 	st.markdown(f"""
-	Welcome to the Kayal Job Recruitment Portal. Hope you are having a wonderful {date.today().strftime("%A")}. If you're seeking a job, [click here](https://forms.gle/T4UXQ9s5M2NUAUxQ6)
+	Welcome to the Kayal Job Recruitment Portal. Hope you are having a wonderful {date.today().strftime("%A")}.
 	""", unsafe_allow_html=True)
 
 	st.info("Use the sidebar to navigate the site.", icon="👈")
