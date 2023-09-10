@@ -7,44 +7,6 @@ from datetime import date
 
 import numpy as np
 
-def make_clickable(link, text=None):
-	if text is None:
-		# text = link.split('=')[1]
-		text = link
-	return f'<a target="_blank" href="{link}">{text}</a>'
-
-def make_checkbox(value):
-	if value is True:
-		icon = "✅"
-	elif value is False:
-		icon = "❌"
-	else:
-		icon = ""
-
-	return icon
-
-def make_boolean(value):
-	if value == "Yes":
-		value = True
-	elif value == "No":
-		value = False
-	else:
-		value = None
-	return value
-
-@st.cache_data(ttl=ttl_short)
-def get_data():
-	return read_gsheet("1bT5UT2eu_QvAbfVfN_1-cNPVwCoEcgq1PXY1dEPYlvA", sheet_id=2027342440)
-	
-	"""
-	return (
-		pl
-		.scan_csv("data.csv")
-		.collect()
-		.to_pandas()
-	)
-	"""
-
 def main():
 	init(
 		__file__,
