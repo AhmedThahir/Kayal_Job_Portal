@@ -86,10 +86,10 @@ def main():
 		)
 
 		df["Currently in UAE"] = df["Currently in UAE"].apply(make_boolean)
-		currently_in_uae = st.checkbox(
-			"Currently in UAE"
+		show_only_currently_in_uae = st.toggle(
+			"Show only currently in UAE?"
 		)
-		if currently_in_uae is True:
+		if show_only_currently_in_uae is True:
 			currently_in_uae = [True]
 		else:
 			currently_in_uae = [True, False]
@@ -100,7 +100,8 @@ def main():
 	       `Currently in UAE` in @currently_in_uae
 	""")
 
-	results_count.markdown(f"Showing {df.shape[0]}/{total_df_size} results")
+	with results_count:
+		st.markdown(f"Showing {df.shape[0]}/{total_df_size} results")
 	
 	# st.dataframe(df, use_container_width=True)
 	# AgGrid(df, enable_enterprise_modules=False)
